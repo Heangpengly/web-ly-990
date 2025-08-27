@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 10px;
+    font-family: "Noto Sans", sans-serif;
+    background-color: #eee;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+ul {
+    list-style-type: none;
+}
+.navigation {   /* ✅ fixed class name */
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.1);
+
+}
+.menu {
+    width: 90%;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-left {
+    display: flex;
+    align-items: center;
+}
+.menu-left > ul {
+    display: flex;
+    gap: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.menu-left > ul > li {
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+}
+.menu-left > ul > li:hover {
+    background-color: #f3f3f3;
+    cursor: pointer;
+}
+.menu-center {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+.menu-center > img {
+    width: 25%;
+    
+}
+.menu-right {
+    width: 45%;
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    
+    
+}
+.menu-right > ul{
+    display: flex;
+    /* background-color: red; */
+    align-items: center;
+    height: 100%;
+    gap: 20px;
+}
+
+.menu-right>ul>li :first-child{
+    height: 100%;
+    padding: 8px 0;
+}
+.txt-search{
+    display: flex;
+    height: 100%;
+    /* background-color: aquamarine; */
+    border-radius: 5px;
+    overflow: hidden;
+}
+.txt-search>input{
+    height: 100%;
+    border: none;
+    background-color: #eee;
+}
+.txt-search > input  :focus{
+    outline: none;
+
+}
+
+
+.txt-search > span{
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+
+}
+.menu-right> ul > li{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+    padding: 0 10px;
+    text-transform: uppercase;
+}
+.menu-right > ul > li:hover :first-child {
+    background-color: red;
+    cursor: pointer;
+}
